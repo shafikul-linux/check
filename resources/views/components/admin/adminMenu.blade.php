@@ -1,9 +1,9 @@
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       
-      <x-adminTopMenu.leftside/>
+      <x-admin.adminTopMenu.leftside/>
       
-      <x-adminTopMenu.rightside/>
+      <x-admin.adminTopMenu.rightside/>
         
     </nav>
     <!-- /.navbar -->

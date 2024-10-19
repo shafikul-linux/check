@@ -34,14 +34,32 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-
-    <!-- All Content -->
     <div class="wrapper">
-        <x-adminLoder />
 
-        <x-adminMenu />
+        <!--  Loder -->
+        <x-admin.adminLoder />
 
-        {{ $slot }}
+        <!-- Top menu -->
+        <x-admin.adminMenu />
+
+        <!-- Sidebar -->
+        <x-admin.sidebar />
+
+        <!-- All content-wrapper -->
+        <div class="content-wrapper">
+
+            {{ $slot }}
+
+        </div>
+
+        <!-- Footer -->
+        <x-admin.footer />
+
+        
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
 
     </div>
 
