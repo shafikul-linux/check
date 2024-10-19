@@ -37,6 +37,9 @@
 
     <!-- All Content -->
     <div class="wrapper">
+        <x-adminLoder />
+
+        <x-adminMenu />
 
         {{ $slot }}
 
