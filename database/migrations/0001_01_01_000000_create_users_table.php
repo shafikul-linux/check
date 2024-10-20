@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->enum('role', [0,1,2,3])->default(3)->comment('0:admin| 1:teacher| 2:parent| 3:student');
+            $table->string('g_token')->nullable();
+            $table->string('fb_token')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
