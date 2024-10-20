@@ -618,4 +618,9 @@
     </section>
     <!-- /.content -->
 
+
+    @section('scripts')
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="{{ url('dist/js/pages/dashboard.js') }}"></script>
+    @endsection
 </x-dashboard-layout>
